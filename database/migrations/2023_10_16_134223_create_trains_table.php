@@ -23,7 +23,6 @@ return new class extends Migration
             $table->string('codice_treno',10)->unique();
             $table->tinyInteger('numero_di_carrozze');
             $table->boolean('in_orario')->default(true);
-            $table->tinyInteger('cancellato')->default(0);
             $table->timestamps();
         });
     }
